@@ -1,0 +1,42 @@
+{% extends  "base.html" %}
+{% block content %}
+<section class="flex justify-center flex-col w-full sm:w-2/3 p-2">
+    <h2 class="text-center mb-3 text-2xl font-bold text-white">simpangan rerata</h2>
+    <form action="" method="post" class="w-full flex justify-center items-center px-2 border border-white rounded p-2">
+        <table class="w-full">
+            <tr class="text-center">
+                <td colspan="3">
+                    <input type="text" name="datum" placeholder="datum" class="w-2/3 py-2 px-4 text-lg font-semibold focus:outline-none rounded mb-3">
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td colspan="3">
+                    <button type="submit" class="bg-yellow-600 hover:bg-yellow-500 duration-300 py-2 px-4 rounded text-white font-semibold text-base">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div class="w-full border border-white mt-5 rounded p-3">
+        <table class="w-full text-center">
+            <tr class="text-white font-semibold text-base">
+                <td>Datum</td>
+                <td>=</td>
+                <td>{{ datum }}</td>
+            </tr>
+            <tr class="text-white font-semibold text-base">
+                <td>Jumlah Data</td>
+                <td>=</td>
+                <td>{{ n }}</td>
+            </tr>
+            <tr class="text-white font-semibold text-base">
+                <td>Hasil</td>
+                <td>=</td>
+                <td>{{ result }}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="w-full p-3 flex justify-center items-center">
+        <a href="/" class="py-2 px-8 text-lg text-white font-semibold bg-red-500 hover:bg-red-600 rounded duration-300">Back</a>
+    </div>
+</section>
+{% endblock %}
