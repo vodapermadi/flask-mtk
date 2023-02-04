@@ -1,0 +1,10 @@
+penamaan file html
+sr = simpang rata-rata
+s2 = simpang ragam variasi
+rls = regresi linier sederhana
+rlg = regresi linier ganda
+
+penamaan function dan parameter yang di gunakan
+sr,s2 = sr(n,sigma)
+rls = rls()
+rlg = rlg()
